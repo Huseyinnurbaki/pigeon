@@ -17,7 +17,7 @@
 $ npm install --save @hhaluk/pigeon
 ```
 ```js
-import * as Pigeon from './pigeon.js'
+import * as Pigeon from '@hhaluk/pigeon'
 
 async function foo () {
   await Pigeon.NotifyGoogleChat(url, body)
