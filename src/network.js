@@ -1,6 +1,6 @@
-import axios from 'axios'
+const axios = require('axios')
 
-export async function post (url, body, config) {
+function post(url, body, config) {
   const headers = {
     'Content-Type': 'application/json',
     ...config
@@ -15,4 +15,8 @@ export async function post (url, body, config) {
       const errorMessage = 'Request failed with following exception: ' + error
       return errorMessage
     })
+}
+
+module.exports = {
+  post
 }

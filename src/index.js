@@ -1,6 +1,11 @@
-import * as Pigeon from './pigeon.js'
+const network = require('./network')
 
-async function exec () {
-  await Pigeon.NotifyGoogleChat()
+const missingArgument = () => console.log('Missing NotifyGoogleChat argument !')
+
+async function NotifyGoogleChat (url = missingArgument, body = missingArgument) {
+  return await network.post(url, body)
 }
-exec()
+
+module.exports = {
+  NotifyGoogleChat
+}
