@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-function post(url, body, config) {
+function post (url, body, config) {
   const headers = {
     'Content-Type': 'application/json',
     ...config
@@ -13,6 +13,7 @@ function post(url, body, config) {
   })
     .catch(function (error) {
       const errorMessage = 'Request failed with following exception: ' + error
+      console.log(errorMessage)
       return errorMessage
     })
 }
