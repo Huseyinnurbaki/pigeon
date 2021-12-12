@@ -2,13 +2,13 @@
 ## Pigeon is a collection of commonly used webhooks.
 ## Supported Notification Channels
 
-[x] Google Chat
-[ ] Slack
-[ ] Telegram
-[ ] Discord
-[ ] Sendgrid
-[ ] Ses
-[ ] Mailgun
+- [x] Google Chat
+- [ ] Slack
+- [ ] Telegram
+- [ ] Discord
+- [ ] Sendgrid
+- [ ] Ses
+- [ ] Mailgun
 
 
 ## Usage
