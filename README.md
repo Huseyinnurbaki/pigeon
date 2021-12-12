@@ -1,6 +1,6 @@
 ![Pigeon](./pigeon.png "Pigeon")
 ## Pigeon is a collection of commonly used webhooks.
-## Supported Notification Channels
+### Supported Notification Channels
 
 - [x] Google Chat
 - [ ] Slack
