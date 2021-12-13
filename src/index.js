@@ -1,11 +1,19 @@
 const network = require('./network')
+require('dotenv').config()
 
-const missingArgument = () => console.log('Missing NotifyGoogleChat argument !')
+const readFromEnvironment = (value) => {
+  return process.env[value]
+}
 
-function NotifyGoogleChat (url = missingArgument, body = missingArgument) {
+function NotifyGoogleChat (body, url = readFromEnvironment('GOOGLE_CHAT_API_URL')) {
+  return network.post(url, body)
+}
+function NotifySlackChannel (body, url = readFromEnvironment('SLACK_API_URL')) {
   return network.post(url, body)
 }
 
+NotifyGoogleChat({})
 module.exports = {
-  NotifyGoogleChat
+  NotifyGoogleChat,
+  NotifySlackChannel
 }
