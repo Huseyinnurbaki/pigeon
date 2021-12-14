@@ -4,7 +4,7 @@
 
 - [x] Google Chat
 - [x] Slack
-- [ ] Telegram
+- [X] Telegram
 - [ ] Discord
 - [ ] Sendgrid
 - [ ] Ses
