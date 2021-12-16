@@ -33,6 +33,7 @@ function foo () {
 |---|---|---|
 | NotifyGoogleChat  | body, url   | GOOGLE_CHAT_API_URL
 | NotifySlackChannel  | body, url   | SLACK_API_URL
+| NotifyTelegramChannel  | body, url   | TELEGRAM_API_URL
 
 ### Api References
 
