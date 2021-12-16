@@ -14,9 +14,13 @@ function NotifySlackChannel (body, url = readFromEnvironment('SLACK_API_URL')) {
 function NotifyTelegramChannel (body, url = readFromEnvironment('TELEGRAM_API_URL')) {
   return network.post(url, body)
 }
+function NotifyPrivateChannel (body, url = readFromEnvironment('PRIVATE_API_URL')) {
+  return network.post(url, body)
+}
 
 module.exports = {
   NotifyGoogleChat,
   NotifySlackChannel,
-  NotifyTelegramChannel
+  NotifyTelegramChannel,
+  NotifyPrivateChannel
 }
