@@ -15,7 +15,7 @@
 ## Usage
 
 ```console
-$ npm install --save @hhaluk/pigeon
+$ npm install @hhaluk/pigeon
 ```
 
 
